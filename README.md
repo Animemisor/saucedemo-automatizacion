@@ -66,3 +66,31 @@ npx cucumber-js features/inicio-sesion.feature
 
 # Solo pruebas de compra
 npx cucumber-js features/flujo-compra.feature
+
+🎯 Escenarios de Prueba
+Login
+Escenario	Usuario	Resultado Esperado
+✅ Login exitoso	standard_user	Redirige a productos
+❌ Login fallido	usuario_invalido	Muestra error
+🔒 Usuario bloqueado	locked_out_user	Muestra error de bloqueo
+
+Compra
+Escenario	Descripción	Validación
+🛒 Compra simple	Agregar 1 producto	Confirmación de pedido
+🛒🛒 Múltiples productos	Agregar 2 productos	Todos en carrito
+🔑 Credenciales de Prueba
+Usuario	Contraseña	Tipo
+standard_user	secret_sauce	Usuario estándar
+locked_out_user	secret_sauce	Usuario bloqueado
+🎨 Patrón de Diseño
+Page Object Model (POM)
+PaginaBase: Clase padre con métodos comunes (navegar, hacer clic, llenar campo)
+
+Páginas específicas: Cada página encapsula sus selectores y acciones
+
+📊 Reportes
+Los reportes se generan en la carpeta reports/ en formato JSON después de cada ejecución.
+
+📝 Autor
+Miguel Angel Livia Camacho
+Proyecto realizado como parte del Reto de Automatización QA – FrontEnd
