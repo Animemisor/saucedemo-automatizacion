@@ -2,7 +2,6 @@
 node_modules/
 
 # Archivos JSON de reportes
-*.json
 !package.json
 !package-lock.json
 

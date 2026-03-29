@@ -1,0 +1,671 @@
+[
+  {
+    "description": "  Como cliente de Sauce Demo\n  Quiero agregar productos al carrito y completar una compra\n  Para poder adquirir los productos que necesito",
+    "elements": [
+      {
+        "description": "",
+        "id": "flujo-de-compra;completar-compra-exitosamente",
+        "keyword": "Escenario",
+        "line": 13,
+        "name": "Completar compra exitosamente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que he iniciado sesión como \"standard_user\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3467273099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 10,
+            "name": "estoy en la página de productos",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11782299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 14,
+            "name": "agrego un producto al carrito",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1360002199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 15,
+            "name": "debería ver el indicador del carrito actualizado a \"1\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:170"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5174500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 17,
+            "name": "navego al carrito de compras",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1325269600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 18,
+            "name": "debería ver el producto en mi carrito",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:178"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12621500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 20,
+            "name": "procedo al pago",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 831522399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nombre",
+                      "Juan"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "apellido",
+                      "Pérez"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "codigoPostal",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Y ",
+            "line": 21,
+            "name": "ingreso mi información de pago con:",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2320171799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 25,
+            "name": "completo el proceso de compra",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1831484400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 26,
+            "name": "debería ver la confirmación del pedido",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:202"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9818999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 27,
+            "name": "la confirmación del pedido debería mostrar \"Thank you for your order!\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:210"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1505445700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2161200400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@happy-path",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "flujo-de-compra;agregar-múltiples-productos-y-comprar",
+        "keyword": "Escenario",
+        "line": 30,
+        "name": "Agregar múltiples productos y comprar",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que he iniciado sesión como \"standard_user\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3452462299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 10,
+            "name": "estoy en la página de productos",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2827499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 31,
+            "name": "agrego múltiples productos al carrito",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2161752099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 32,
+            "name": "debería ver el indicador del carrito actualizado correctamente",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1968000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 34,
+            "name": "navego al carrito de compras",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1322623900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 35,
+            "name": "debería ver todos los productos agregados en mi carrito",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6901599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 37,
+            "name": "procedo al pago",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 822871599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nombre",
+                      "María"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "apellido",
+                      "López"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "codigoPostal",
+                      "67890"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Y ",
+            "line": 38,
+            "name": "ingreso mi información de pago con:",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2298439599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 42,
+            "name": "completo el proceso de compra",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1851518100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 43,
+            "name": "debería ver la confirmación del pedido",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:202"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9775999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2141433699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiples-productos",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "flujo-de-compra",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Flujo de Compra",
+    "tags": [],
+    "uri": "features\\flujo-compra.feature"
+  },
+  {
+    "description": "  Como cliente de Sauce Demo\n  Quiero iniciar sesión en la aplicación\n  Para poder acceder a mi cuenta y realizar compras",
+    "elements": [
+      {
+        "description": "",
+        "id": "funcionalidad-de-inicio-de-sesión;inicio-de-sesión-exitoso-con-credenciales-válidas",
+        "keyword": "Escenario",
+        "line": 12,
+        "name": "Inicio de sesión exitoso con credenciales válidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que navego a la página de inicio de sesión de Sauce Demo",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1987508200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 13,
+            "name": "ingreso el nombre de usuario \"standard_user\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636607700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 14,
+            "name": "ingreso la contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 631094300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 15,
+            "name": "hago clic en el botón de iniciar sesión",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859280699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 16,
+            "name": "debería ser redirigido a la página de productos",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:147"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10190399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 17,
+            "name": "debería ver el inventario de productos",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5065299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2136023800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positivo",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "funcionalidad-de-inicio-de-sesión;inicio-de-sesión-fallido-con-credenciales-inválidas",
+        "keyword": "Escenario",
+        "line": 20,
+        "name": "Inicio de sesión fallido con credenciales inválidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que navego a la página de inicio de sesión de Sauce Demo",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1963046199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"usuario_invalido\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641541700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 22,
+            "name": "ingreso la contraseña \"clave_invalida\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 617916999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 23,
+            "name": "hago clic en el botón de iniciar sesión",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1844653800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 24,
+            "name": "debería ver un mensaje de error \"Username and password do not match any user in this service\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1017463900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2144006399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negativo",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "funcionalidad-de-inicio-de-sesión;inicio-de-sesión-con-usuario-bloqueado",
+        "keyword": "Escenario",
+        "line": 27,
+        "name": "Inicio de sesión con usuario bloqueado",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que navego a la página de inicio de sesión de Sauce Demo",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1982296399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 28,
+            "name": "ingreso el nombre de usuario \"locked_out_user\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 643181499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 29,
+            "name": "ingreso la contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 631800500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 30,
+            "name": "hago clic en el botón de iniciar sesión",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1831243999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 31,
+            "name": "debería ver un mensaje de error \"Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "step_definitions\\pasos_comunes.js:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1008805100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2139497900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bloqueado",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "funcionalidad-de-inicio-de-sesión",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Funcionalidad de Inicio de Sesión",
+    "tags": [],
+    "uri": "features\\inicio-sesion.feature"
+  }
+]
