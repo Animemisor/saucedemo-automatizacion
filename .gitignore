@@ -1,0 +1,19 @@
+# Dependencias (no se suben a GitHub)
+node_modules/
+
+# Reportes de pruebas (cambian cada vez que ejecutas)
+reports/
+!reports/.gitignore
+
+# Archivos JSON de reportes
+*.json
+!package.json
+!package-lock.json
+
+# Configuración local de VS Code
+.vscode/
+settings.json
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

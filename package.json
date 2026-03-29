@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-automatizacion",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas para Sauce Demo usando Playwright y Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters '{\"headed\": true}'",
+    "reporte": "node generar-reporte.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.11.1",
+    "@playwright/test": "^1.40.0",
+    "expect": "^29.7.0",
+    "playwright": "^1.40.0"
+  }
+}
